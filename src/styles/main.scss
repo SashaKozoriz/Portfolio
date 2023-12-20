@@ -1,0 +1,16 @@
+@import 'utils';
+@import 'typography';
+
+@import 'src/styles/blocks/container.scss';
+@import 'src/styles/blocks/section.scss';
+@import 'src/styles/blocks/header.scss';
+@import 'src/styles/blocks/nav.scss';
+@import 'src/styles/blocks/benefits.scss';
+
+body {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: $color-dark-grey;
+  background-color: $color-white;
+}

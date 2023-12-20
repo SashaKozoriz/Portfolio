@@ -1,0 +1,68 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+  @include onMobile {
+    margin-bottom: 25px;
+  }
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+  &__item {
+    &:first-child {
+      margin-left: 0;
+      margin-right: 20px;
+    }
+    @include onMobile {
+      display: none;
+    }
+    &__burger {
+      height: 32px;
+      display: none;
+      @include onMobile {
+        display: block;
+      }
+      @include onTablet {
+        display: block;
+      }
+    }
+    & > span {
+      margin: 0 3px;
+      @include onMobile {
+        display: none;
+      }
+    }
+  }
+  &__link {
+    text-decoration: none;
+    color: $color-dark-grey;
+    font-size: 14px;
+    line-height: 20px;
+    &:hover {
+      color: #000;
+    }
+    &__lang--not-active {
+      color: $color-gray;
+    }
+    &__lang-ua {
+      margin-right: 48px;
+    }
+  }
+  &__button {
+    width: 102px;
+    height: 48px;
+    background-color: $color-dark-grey;
+    border: none;
+    color: #fff;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 700;
+    @include onTablet {
+      margin-right: 30px;
+    }
+  }
+}
