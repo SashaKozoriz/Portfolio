@@ -61,6 +61,9 @@
     font-size: 12px;
     line-height: 14px;
     font-weight: 700;
+    &:hover {
+        background-color: $color-black;
+      }
     @include onTablet {
       margin-right: 30px;
     }
