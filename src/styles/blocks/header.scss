@@ -1,12 +1,9 @@
 .header {
   margin-top: 40px;
-  margin-bottom: 170px;
   @include onTablet {
-    margin-bottom: 140px;
   }
   @include onMobile {
     margin-top: 25px;
-    margin-bottom: 110px;
   }
 
   &__content {
