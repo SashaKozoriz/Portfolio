@@ -1,0 +1,125 @@
+.features {
+  &__title {
+    font-size: 56px;
+    line-height: 70px;
+    margin-bottom: 30px;
+    @include onTablet {
+      font-size: 30px;
+      line-height: 40px;
+    }
+    @include onMobile {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+  &__content {
+    position: relative;
+    background-color: #d6ecec;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 60px 102px;
+    @include onTablet {
+      padding: 60px 90px;
+    }
+
+    @include onMobile {
+      padding: 30px 32px 0 32px;
+      margin: 0 -30px;
+    }
+
+    &__item {
+      flex-basis: 50%;
+      margin-bottom: 56px;
+      @include onTablet {
+        flex-basis: 100%;
+      }
+      @include onMobile {
+        flex-basis: 100%;
+      }
+      &__title {
+        font-size: 34px;
+        line-height: 42px;
+        color: $text-green;
+        margin-bottom: 30px;
+        @include onTablet {
+          font-size: 18px;
+          margin-bottom: 20px;
+        }
+
+        @include onMobile {
+          font-size: 18px;
+        }
+      }
+      &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        list-style: disc inside;
+        font-size: 16px;
+        @include onTablet {
+          font-size: 14px;
+        }
+
+        @include onMobile {
+          font-size: 14px;
+        }
+      }
+      &:nth-child(3) {
+        margin-bottom: 0;
+      }
+
+      &--hidden {
+        @include onTablet {
+          display: none;
+        }
+
+        @include onMobile {
+          display: none;
+        }
+      }
+    }
+    &__image {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 560px;
+      height: 300px;
+      object-fit: fill;
+      @include onTablet {
+        width: 435px;
+        height: 225px;
+      }
+      @include onMobile {
+        position: static;
+        height: 178px;
+        margin: 0 -30px;
+      }
+    }
+    &__slider {
+      display: none;
+      margin-bottom: 100px;
+      &__counter {
+        display: flex;
+        justify-content: center;
+        gap: 3px;
+        text-align: center;
+        margin-top: 8px;
+        &__total {
+          font-size: 11px;
+          color: $text-green;
+          transform: translateY(8px);
+        }
+      }
+      @include onTablet {
+        display: block;
+      }
+      @include onMobile {
+        margin-bottom: 0;
+        display: block;
+      }
+    }
+    @include onMobile {
+      justify-content: center;
+    }
+  }
+}

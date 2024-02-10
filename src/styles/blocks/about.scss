@@ -12,7 +12,11 @@
       }
       &__image {
         width: 50%;
-        max-height: 400px;
+        height: 388px;
+        object-fit: cover;
+        @include onTablet {
+          height: 415px;
+        }
         @include onMobile {
           display: none;
         }
@@ -33,6 +37,10 @@
         @include onTablet {
           font-size: 36px;
           line-height: 46px;
+        }
+        @include onMobile {
+          font-size: 30px;
+          line-height: 40px;
         }
       }
       &__description {

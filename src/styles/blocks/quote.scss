@@ -1,0 +1,39 @@
+.quote {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  &__text {
+    margin: 42px 0 30px 0;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 700;
+    @include onMobile {
+      font-size: 14px;
+      line-height: 20px;
+      
+    }
+  }
+  &__image {
+    position: absolute;
+    z-index: -1;
+  }
+  &__author {
+    &__image {
+      margin-bottom: 20px;
+    }
+    &__name {
+      font-size: 16px;
+      line-height: 22px;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+    &__position {
+      font-size: 14px;
+      line-height: 19px;
+      color: $text-gray;
+    }
+  }
+}
