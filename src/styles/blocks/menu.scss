@@ -19,10 +19,10 @@
       justify-content: space-between;
       margin: 40px 0 64px 0;
       align-items: center;
-      @include onTablet {
+      @include on-tablet {
         height: 48px;
       }
-      @include onMobile {
+      @include on-mobile {
         margin: 24px 0 55px 0;
       }
     }
@@ -42,7 +42,7 @@
       &:hover {
         background-color: $color-black;
       }
-      @include onMobile {
+      @include on-mobile {
         display: block;
       }
     }
@@ -51,7 +51,7 @@
       display: flex;
       flex-direction: column;
       gap: 40px;
-      @include onMobile {
+      @include on-mobile {
         gap: 24px;
       }
       &__item {
@@ -70,7 +70,7 @@
             text-decoration: none;
             margin-right: 20px;
           }
-          @include onMobile {
+          @include on-mobile {
             display: block;
           }
         }
@@ -81,7 +81,7 @@
           line-height: 28px;
           font-weight: 400;
           font-style: normal;
-          @include onMobile {
+          @include on-mobile {
             font-size: 14px;
           }
           &:hover {

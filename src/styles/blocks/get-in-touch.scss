@@ -1,0 +1,78 @@
+.get-in-touch {
+  &__content {
+    display: flex;
+
+    &__title {
+      width: 50%;
+      font-size: 56px;
+      font-weight: 700;
+      line-height: 70px;
+      text-transform: uppercase;
+
+      @include on-tablet {
+        font-size: 36px;
+        line-height: 46px;
+      }
+
+      @include on-mobile {
+        font-size: 30px;
+        line-height: 40px;
+      }
+    }
+
+    &__form {
+      display: block;
+      width: 50%;
+      
+
+      &__input {
+        width: 100%;
+        padding: 12px 36px;
+        margin-bottom: 20px;
+        background-color: $color-white;
+        border: 1px solid $color-gray;
+        
+        &::placeholder {
+          color: $color-gray;
+        }
+      }
+
+      &__textarea {
+        width: 100%;
+        padding: 12px 36px;
+        background-color: $color-white;
+        resize: none;
+        margin-bottom: 30px;
+        border: 1px solid $color-gray;
+
+
+        &::placeholder {
+          color: $color-gray;
+        }
+      }
+
+      &__button {
+        width: 120px;
+        height: 40px;
+        color: white;
+        font-size: 12px;
+        line-height: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        border: none;
+        cursor: pointer;
+        background-color: $color-green;
+        display: block;
+
+        &:hover {
+          background-color: $text-green;
+        }
+
+      }
+    }
+
+    @include on-mobile {
+      flex-direction: column;
+    }
+  }
+}

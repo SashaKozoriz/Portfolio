@@ -24,13 +24,13 @@
             <a href="#" class="nav__link">SPECS</a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link nav__link__lang-en" id="en">EN</a>
+            <a href="#" class="nav__link nav__link__lang-en nav__link__lang--not-active" id="en">EN</a>
           </li>
           <li class="nav__item">
             <span>/</span>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link nav__link__lang-ua nav__link__lang--not-active" id="ua">UA</a>
+            <a href="#" class="nav__link nav__link__lang-ua" id="ua">UA</a>
           </li>
           <li class="nav__item">
             <button class="nav__button">BUY</button>
@@ -56,6 +56,7 @@
         <div class="header__content__image">
         </div>
       </div>
+    </div>
   </header>
   <div class="menu" id="menu">
     <div class="container">
@@ -73,16 +74,16 @@
 
         <ul class="menu__content__items__list">
           <li class="menu__content__items__list__item">
-            <a href="#" class="menu__content__items__list__item__link">OUR STORY</a>
+            <a href="#our-story" class="menu__content__items__list__item__link">OUR STORY</a>
           </li>
           <li class="menu__content__items__list__item">
-            <a href="#" class="menu__content__items__list__item__link">ABOUT US</a>
+            <a href="#about" class="menu__content__items__list__item__link">ABOUT US</a>
           </li>
           <li class="menu__content__items__list__item">
-            <a href="#" class="menu__content__items__list__item__link">FEATURES</a>
+            <a href="#features" class="menu__content__items__list__item__link">FEATURES</a>
           </li>
           <li class="menu__content__items__list__item">
-            <a href="#" class="menu__content__items__list__item__link">GET IN TOUCH</a>
+            <a href="#get-in-touch" class="menu__content__items__list__item__link">GET IN TOUCH</a>
           </li>
           <li class="menu__content__items__list__item menu__content__items__list__item__specs">
             <a href="#specs" class="menu__content__items__list__item__specs__title">SPECS</a>
@@ -100,13 +101,13 @@
     </div>
   </div>
   <main>
-    <section class="section benefits">
+    <section class="section benefits" id="our-story">
       <div class="container">
         <ul class="navigation">
-          <li class="navigation__item"><a class="navigation__item__link" href="">OUR STORY</a></li>
-          <li class="navigation__item"><a class="navigation__item__link" href="">ABOUT US</a></li>
-          <li class="navigation__item"><a class="navigation__item__link" href="">FEATURES</a></li>
-          <li class="navigation__item"><a class="navigation__item__link" href="">GET IN TOUCH</a></li>
+          <li class="navigation__item"><a class="navigation__item__link" href="#our-story">OUR STORY</a></li>
+          <li class="navigation__item"><a class="navigation__item__link" href="#about">ABOUT US</a></li>
+          <li class="navigation__item"><a class="navigation__item__link" href="#features">FEATURES</a></li>
+          <li class="navigation__item"><a class="navigation__item__link" href="#get-in-touch">GET IN TOUCH</a></li>
         </ul>
         <ul class="benefits__cards">
           <li class="benefits__card">
@@ -166,7 +167,7 @@
         </div>
       </div>
     </section>
-    <section class="section about">
+    <section class="section about" id="about">
       <div class="container">
         <div class="about__list">
           <div class="about__list__item">
@@ -204,17 +205,17 @@
         <div class="quote__content">
           <img class="quote__image" src="./images/quote.svg" alt="quote">
           <p class="quote__text">
-            It really took me by surprise honestly to have such full beautiful sound that coming out of this small compact device.
+            It really took me by surprise honestly to have such full beautiful sound that coming out of this small
+            compact device.
             And with the brush aluminum surface, it feels so familiar. Like my iPhone.
           </p>
           <img class="quote__author__image" src="./images/author.png" alt="author">
           <p class="quote__author__name">Garrett Martin</p>
           <p class="quote__author__position">Creative Director</p>
         </div>
-        
       </div>
     </section>
-    <section class="section features">
+    <section class="section features" id="features">
       <div class="container">
         <h2 class="features__title">FEATURES</h2>
         <div class="features__content">
@@ -263,13 +264,20 @@
         </div>
       </div>
     </section>
-    <section class="section">
+    <section class="section get-in-touch" id="get-in-touch">
       <div class="container">
-
+        <div class="get-in-touch__content">
+          <h2 class="get-in-touch__content__title">DO YOU HAVE ANY QUESTIONS?</h2>
+          <form class="get-in-touch__content__form" action="" >
+              <input type="email" required class="get-in-touch__content__form__input" placeholder="Your email">
+              <textarea required class="get-in-touch__content__form__textarea"  placeholder="Your message"></textarea>
+              <input type="submit" value="Send" class="get-in-touch__content__form__button"></input>
+            </form>
+        </div>
       </div>
     </section>
   </main>
-  <script type="module" src="scripts/main.js" type="module"></script>
+  <script type="module" src="scripts/main.js"></script>
 </body>
 
 </html>

@@ -1,9 +1,9 @@
 .section {
   margin-bottom: 170px;
-  @include onTablet {
+  @include on-tablet {
     margin-bottom: 140px;
   }
-  @include onMobile {
+  @include on-mobile {
     margin-bottom: 110px;
   }
 }

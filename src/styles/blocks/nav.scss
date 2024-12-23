@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 100px;
-  @include onMobile {
+  @include on-mobile {
     margin-bottom: 25px;
   }
   &__items {
@@ -17,22 +17,22 @@
       margin-left: 0;
       margin-right: 20px;
     }
-    @include onMobile {
+    @include on-mobile {
       display: none;
     }
     &__burger {
       height: 32px;
       display: none;
-      @include onMobile {
+      @include on-mobile {
         display: block;
       }
-      @include onTablet {
+      @include on-tablet {
         display: block;
       }
     }
     & > span {
       margin: 0 3px;
-      @include onMobile {
+      @include on-mobile {
         display: none;
       }
     }
@@ -62,9 +62,9 @@
     line-height: 14px;
     font-weight: 700;
     &:hover {
-        background-color: $color-black;
-      }
-    @include onTablet {
+      background-color: $color-black;
+    }
+    @include on-tablet {
       margin-right: 30px;
     }
   }

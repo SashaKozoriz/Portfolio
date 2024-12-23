@@ -12,6 +12,11 @@
 @import 'src/styles/blocks/about.scss';
 @import 'src/styles/blocks/quote.scss';
 @import 'src/styles/blocks/features.scss';
+@import 'src/styles/blocks/get-in-touch.scss';
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: 'Inter', Arial, Helvetica, sans-serif;
@@ -19,4 +24,8 @@ body {
   font-style: normal;
   color: $color-dark-grey;
   background-color: $color-white;
+}
+
+*{
+  transition: $transition
 }

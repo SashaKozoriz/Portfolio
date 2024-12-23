@@ -3,11 +3,11 @@
   margin: 0 auto;
   padding: 0 124px;
 
-  @include onTablet {
+  @include on-tablet {
     padding: 0 34px;
   }
 
-  @include onMobile {
+  @include on-mobile {
     padding: 0 30px;
   }
 }

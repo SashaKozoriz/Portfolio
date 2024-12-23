@@ -7,22 +7,22 @@
     &__item {
       display: flex;
       gap: 30px;
-      @include onTablet {
+      @include on-tablet {
         gap: 20px;
       }
       &__image {
         width: 50%;
         height: 388px;
         object-fit: cover;
-        @include onTablet {
+        @include on-tablet {
           height: 415px;
         }
-        @include onMobile {
+        @include on-mobile {
           display: none;
         }
         &--mobile {
           display: none;
-          @include onMobile {
+          @include on-mobile {
             display: block;
             width: 100%;
             margin-bottom: 20px;
@@ -34,11 +34,11 @@
         font-size: 56px;
         line-height: 70px;
         margin-bottom: 30px;
-        @include onTablet {
+        @include on-tablet {
           font-size: 36px;
           line-height: 46px;
         }
-        @include onMobile {
+        @include on-mobile {
           font-size: 30px;
           line-height: 40px;
         }
@@ -52,7 +52,7 @@
       &__link {
         display: block;
         text-decoration: none;
-        color: #0DB2B3;
+        color: #0db2b3;
         width: max-content;
         font-size: 12px;
         line-height: 14px;
@@ -68,11 +68,11 @@
           top: 5px;
           width: 50%;
           height: 1px;
-          background-color: #0DB2B3;
+          background-color: #0db2b3;
           transition: $transition;
         }
       }
-      @include onMobile {
+      @include on-mobile {
         display: block;
       }
     }
