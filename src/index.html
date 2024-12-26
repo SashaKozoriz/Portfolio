@@ -4,19 +4,23 @@
     <meta charset="UTF-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1.0" />
+      content="width=device-width, initial-scale=1.0"
+    />
     <title>Crazybaby</title>
 
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" />
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+    />
     <link
       rel="stylesheet"
-      href="styles/main.scss" />
+      href="styles/main.scss"
+    />
     <link
       rel="shortcut icon"
       href="./images/favicon.png"
-      type="image/x-icon" />
+      type="image/x-icon"
+    />
   </head>
 
   <body>
@@ -24,7 +28,10 @@
       <div class="container">
         <nav class="nav">
           <div class="nav__logo">
-            <a href="/">
+            <a
+              class="logo"
+              href="/"
+            >
               <img
                 src="./images/logo.svg"
                 alt="logo"
@@ -466,7 +473,8 @@
       </section>
       <section
         class="section get-in-touch"
-        id="get-in-touch">
+        id="get-in-touch"
+      >
         <div class="container">
           <div class="get-in-touch__content">
             <h2 class="get-in-touch__content__title">
@@ -475,27 +483,90 @@
             <form
               class="get-in-touch__content__form"
               action="get"
-              onsubmit="this.reset(); return false;">
+              onsubmit="this.reset(); return false;"
+            >
               <input
                 type="email"
                 required
                 class="get-in-touch__content__form__input"
-                placeholder="Your email" />
+                placeholder="Your email"
+              />
               <textarea
                 required
                 class="get-in-touch__content__form__textarea"
-                placeholder="Your message"></textarea>
+                placeholder="Your message"
+              ></textarea>
               <input
                 type="submit"
                 value="Send"
-                class="get-in-touch__content__form__button" />
+                class="get-in-touch__content__form__button"
+              />
             </form>
           </div>
         </div>
       </section>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__content">
+            <a
+              class="footer__content__arrow logo"
+              href="#"
+            >
+              <img
+                src="./images/arrow-up.svg"
+                alt="arrow-up"
+              />
+            </a>
+            <div class="footer__content__logo">
+              <a
+                class="logo"
+                href="#"
+              >
+                <img
+                  src="./images/logo.svg"
+                  alt="logo"
+                />
+              </a>
+            </div>
+            <div class="footer__content__links">
+              <a
+                class="logo"
+                href="https://www.facebook.com/"
+                target="_blank"
+                ><img
+                  class="footer__content__links__image"
+                  src="./images/facebook.svg"
+                  alt="facebook"
+              /></a>
+              <a
+                class="logo"
+                href="https://twitter.com/"
+                target="_blank"
+                ><img
+                  class="footer__content__links__image"
+                  src="./images/twitter.svg"
+                  alt="twitter"
+              /></a>
+              <a
+                class="logo"
+                href="https://www.instagram.com/"
+                target="_blank"
+                ><img
+                  class="footer__content__links__image"
+                  src="./images/instagram.svg"
+                  alt="instagram"
+              /></a>
+            </div>
+            <p class="footer__content__rights">
+              © 2024 All rights reserved. Terms of Use & Privacy Policy
+            </p>
+          </div>
+        </div>
+      </footer>
     </main>
     <script
       type="module"
-      src="scripts/main.js"></script>
+      src="scripts/main.js"
+    ></script>
   </body>
 </html>

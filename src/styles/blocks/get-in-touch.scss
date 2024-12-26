@@ -25,7 +25,6 @@
     &__form {
       display: block;
       width: 50%;
-
       @include on-mobile {
         width: 100%;
       }
@@ -37,8 +36,21 @@
         background-color: $color-white;
         border: 1px solid $color-gray;
 
+        &:focus {
+          border-color: $color-green;
+          outline: none;
+        }
+
         &::placeholder {
           color: $color-gray;
+        }
+
+        @include on-tablet {
+          padding: 12px 30px;
+        }
+
+        @include on-mobile {
+          padding: 12px 20px;
         }
       }
 
@@ -56,8 +68,21 @@
           min-height: 200px;
         }
 
+        &:focus {
+          border-color: $color-green;
+          outline: none;
+        }
+
         &::placeholder {
           color: $color-gray;
+        }
+
+        @include on-tablet {
+          padding: 12px 30px;
+        }
+
+        @include on-mobile {
+          padding: 12px 20px;
         }
       }
 
